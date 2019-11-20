@@ -102,6 +102,7 @@ dependencies {
     implementation project(":@react-native-community_netinfo")
     implementation project(":@react-native-community_async-storage")
     implementation project(":mendixnative-release")
+    implementation project(":react-native-nfc-manager")
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "com.facebook.react:react-native:+"  // From node_modules
     implementation "org.webkit:android-jsc:r245459"

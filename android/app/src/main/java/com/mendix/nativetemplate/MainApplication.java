@@ -28,39 +28,41 @@ import org.reactnative.camera.RNCameraPackage;
 import java.util.Arrays;
 import java.util.List;
 
+import community.revteltech.nfc.NfcManagerPackage;
 import fr.greweb.reactnativeviewshot.RNViewShotPackage;
 
 public class MainApplication extends MendixReactApplication {
-  @Override
-  public boolean getUseDeveloperSupport() {
-    return false;
-  }
+    @Override
+    public boolean getUseDeveloperSupport() {
+        return false;
+    }
 
-  @Override
-  public List<ReactPackage> getPackages() {
-      return Arrays.<ReactPackage>asList(
-            new MainReactPackage(),
-            new DarkModePackage(),
-            new CodePush(getCodePushKey(), getApplicationContext(), BuildConfig.DEBUG),
-            new RNGestureHandlerPackage(),
-            new RNCWebViewPackage(),
-            new RNViewShotPackage(),
-            new ReactVideoPackage(),
-            new VectorIconsPackage(),
-            new FingerprintAuthPackage(),
-            new SvgPackage(),
-            new SQLitePluginPackage(),
-            new RNSoundPackage(),
-            new MapsPackage(),
-            new RNInAppBrowserPackage(),
-            new ImagePickerPackage(),
-            new RNGeocoderPackage(),
-            new RNDeviceInfo(),
-            new RNCameraPackage(),
-            new CalendarEventsPackage(),
-            new BlePackage(),
-            new NetInfoPackage(),
-            new AsyncStoragePackage()
-    );
-  }
+    @Override
+    public List<ReactPackage> getPackages() {
+        return Arrays.<ReactPackage>asList(
+                new MainReactPackage(),
+                new DarkModePackage(),
+                new CodePush(getCodePushKey(), getApplicationContext(), BuildConfig.DEBUG),
+                new RNGestureHandlerPackage(),
+                new RNCWebViewPackage(),
+                new RNViewShotPackage(),
+                new ReactVideoPackage(),
+                new VectorIconsPackage(),
+                new FingerprintAuthPackage(),
+                new SvgPackage(),
+                new SQLitePluginPackage(),
+                new RNSoundPackage(),
+                new MapsPackage(),
+                new RNInAppBrowserPackage(),
+                new ImagePickerPackage(),
+                new RNGeocoderPackage(),
+                new RNDeviceInfo(),
+                new RNCameraPackage(),
+                new CalendarEventsPackage(),
+                new BlePackage(),
+                new NetInfoPackage(),
+                new AsyncStoragePackage(),
+                new NfcManagerPackage()
+        );
+    }
 }
