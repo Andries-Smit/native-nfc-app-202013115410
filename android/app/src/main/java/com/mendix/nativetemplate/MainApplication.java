@@ -34,7 +34,7 @@ import fr.greweb.reactnativeviewshot.RNViewShotPackage;
 public class MainApplication extends MendixReactApplication {
     @Override
     public boolean getUseDeveloperSupport() {
-        return false;
+        return true;
     }
 
     @Override
