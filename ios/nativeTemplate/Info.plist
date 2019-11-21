@@ -17,11 +17,11 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>1.0.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>14</string>
 	<key>CodePushKey</key>
 	<string></string>
 	<key>LSRequiresIPhoneOS</key>
@@ -58,7 +58,7 @@
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>To use that feature the app needs access to your photo library.</string>
 	<key>Runtime url</key>
-	<string>$(RUNTIME_URL)</string>
+	<string>https://nativenfc-sandbox.mxapps.io/</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>glyphicons-halflings-regular.ttf</string>
