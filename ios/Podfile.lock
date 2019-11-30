@@ -15,15 +15,6 @@ PODS:
   - Firebase/Messaging (5.15.0):
     - Firebase/CoreOnly
     - FirebaseMessaging (= 3.2.2)
-  - Firebase/MLVision (5.15.0):
-    - Firebase/CoreOnly
-    - FirebaseMLVision (= 0.13.0)
-  - Firebase/MLVisionFaceModel (5.15.0):
-    - Firebase/CoreOnly
-    - FirebaseMLVisionFaceModel (= 0.13.0)
-  - Firebase/MLVisionTextModel (5.15.0):
-    - Firebase/CoreOnly
-    - FirebaseMLVisionTextModel (= 0.13.0)
   - FirebaseAnalytics (5.4.0):
     - FirebaseCore (~> 5.1)
     - FirebaseInstanceID (~> 3.3)
@@ -47,18 +38,6 @@ PODS:
     - GoogleUtilities/Environment (~> 5.2)
     - GoogleUtilities/Reachability (~> 5.2)
     - Protobuf (~> 3.1)
-  - FirebaseMLCommon (0.13.0):
-    - FirebaseCore (~> 5.1)
-  - FirebaseMLVision (0.13.0):
-    - FirebaseCore (~> 5.1)
-    - FirebaseMLCommon (~> 0.13)
-    - GoogleAPIClientForREST/Core (~> 1.3)
-    - GoogleAPIClientForREST/Vision (~> 1.3)
-    - GoogleMobileVision/Detector (~> 1.4)
-  - FirebaseMLVisionFaceModel (0.13.0):
-    - GoogleMobileVision/FaceDetector (~> 1.4)
-  - FirebaseMLVisionTextModel (0.13.0):
-    - GoogleMobileVision/TextDetector (~> 1.4)
   - Folly (2018.10.22.00):
     - boost-for-react-native
     - DoubleConversion
@@ -80,11 +59,6 @@ PODS:
     - GoogleMaps
   - Google-Maps-iOS-Utils/QuadTree (2.1.0):
     - GoogleMaps
-  - GoogleAPIClientForREST/Core (1.3.10):
-    - GTMSessionFetcher (>= 1.1.7)
-  - GoogleAPIClientForREST/Vision (1.3.10):
-    - GoogleAPIClientForREST/Core
-    - GTMSessionFetcher (>= 1.1.7)
   - GoogleAppMeasurement (5.4.0):
     - GoogleUtilities/AppDelegateSwizzler (~> 5.2)
     - GoogleUtilities/MethodSwizzler (~> 5.2)
@@ -96,20 +70,6 @@ PODS:
   - GoogleMaps/Base (2.5.0)
   - GoogleMaps/Maps (2.5.0):
     - GoogleMaps/Base
-  - GoogleMobileVision/Detector (1.6.0):
-    - GoogleToolboxForMac/Logger (~> 2.1)
-    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
-    - GTMSessionFetcher/Core (~> 1.1)
-    - Protobuf (~> 3.1)
-  - GoogleMobileVision/FaceDetector (1.6.0):
-    - GoogleMobileVision/Detector (~> 1.6)
-  - GoogleMobileVision/TextDetector (1.6.0):
-    - GoogleMobileVision/Detector (~> 1.6)
-  - GoogleToolboxForMac/Defines (2.2.2)
-  - GoogleToolboxForMac/Logger (2.2.2):
-    - GoogleToolboxForMac/Defines (= 2.2.2)
-  - "GoogleToolboxForMac/NSData+zlib (2.2.2)":
-    - GoogleToolboxForMac/Defines (= 2.2.2)
   - GoogleUtilities/AppDelegateSwizzler (5.8.0):
     - GoogleUtilities/Environment
     - GoogleUtilities/Logger
@@ -128,11 +88,6 @@ PODS:
     - GoogleUtilities/Logger
   - GoogleUtilities/UserDefaults (5.8.0):
     - GoogleUtilities/Logger
-  - GTMSessionFetcher (1.3.0):
-    - GTMSessionFetcher/Full (= 1.3.0)
-  - GTMSessionFetcher/Core (1.3.0)
-  - GTMSessionFetcher/Full (1.3.0):
-    - GTMSessionFetcher/Core (= 1.3.0)
   - JWT (3.0.0-beta.12):
     - Base64 (~> 1.1.2)
   - nanopb (0.3.9011):
@@ -149,22 +104,14 @@ PODS:
   - react-native-ble-plx-swift (1.1.0)
   - react-native-calendar-events (1.7.3):
     - React
-  - react-native-camera/FaceDetectorMLKit (2.11.1):
-    - Firebase/MLVision
-    - Firebase/MLVisionFaceModel
+  - react-native-camera (2.11.1):
     - React
-    - react-native-camera/RCT
-    - react-native-camera/RN
+    - react-native-camera/RCT (= 2.11.1)
+    - react-native-camera/RN (= 2.11.1)
   - react-native-camera/RCT (2.11.1):
     - React
   - react-native-camera/RN (2.11.1):
     - React
-  - react-native-camera/TextDetector (2.11.1):
-    - Firebase/MLVision
-    - Firebase/MLVisionTextModel
-    - React
-    - react-native-camera/RCT
-    - react-native-camera/RN
   - react-native-geocoder (0.5.0):
     - React
   - react-native-google-maps (0.24.2):
@@ -176,6 +123,8 @@ PODS:
   - react-native-maps (0.24.2):
     - React
   - react-native-netinfo (3.2.1):
+    - React
+  - react-native-nfc-manager (1.2.2):
     - React
   - react-native-sqlite-storage (3.3.11):
     - React
@@ -285,13 +234,13 @@ DEPENDENCIES:
   - react-native-ble-plx (from `../node_modules/react-native-ble-plx`)
   - react-native-ble-plx-swift (from `../node_modules/react-native-ble-plx`)
   - react-native-calendar-events (from `../node_modules/react-native-calendar-events`)
-  - react-native-camera/FaceDetectorMLKit (from `../node_modules/react-native-camera`)
-  - react-native-camera/TextDetector (from `../node_modules/react-native-camera`)
+  - react-native-camera (from `../node_modules/react-native-camera`)
   - react-native-geocoder (from `../node_modules/react-native-geocoder`)
   - react-native-google-maps (from `../node_modules/react-native-maps`)
   - react-native-image-picker (from `../node_modules/react-native-image-picker`)
   - react-native-maps (from `../node_modules/react-native-maps`)
   - "react-native-netinfo (from `../node_modules/@react-native-community/netinfo`)"
+  - react-native-nfc-manager (from `../node_modules/react-native-nfc-manager`)
   - react-native-sqlite-storage (from `../node_modules/react-native-sqlite-storage`)
   - react-native-video (from `../node_modules/react-native-video/react-native-video.podspec`)
   - react-native-webview (from `../node_modules/react-native-webview`)
@@ -334,18 +283,10 @@ SPEC REPOS:
     - FirebaseCore
     - FirebaseInstanceID
     - FirebaseMessaging
-    - FirebaseMLCommon
-    - FirebaseMLVision
-    - FirebaseMLVisionFaceModel
-    - FirebaseMLVisionTextModel
     - Google-Maps-iOS-Utils
-    - GoogleAPIClientForREST
     - GoogleAppMeasurement
     - GoogleMaps
-    - GoogleMobileVision
-    - GoogleToolboxForMac
     - GoogleUtilities
-    - GTMSessionFetcher
     - JWT
     - nanopb
     - Protobuf
@@ -380,6 +321,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native-maps"
   react-native-netinfo:
     :path: "../node_modules/@react-native-community/netinfo"
+  react-native-nfc-manager:
+    :path: "../node_modules/react-native-nfc-manager"
   react-native-sqlite-storage:
     :path: "../node_modules/react-native-sqlite-storage"
   react-native-video:
@@ -422,20 +365,12 @@ SPEC CHECKSUMS:
   FirebaseCore: 35747502d9e8c6ee217385ad04446c7c2aaf9c5c
   FirebaseInstanceID: e2fa4cb35ef5558c200f7f0ad8a53e212215f93e
   FirebaseMessaging: b412996f6a09337d232bb3a6676ce4d1f353d024
-  FirebaseMLCommon: 5e1bc4c4aa1d12c1f6bc38b40d2d60e8e63466bb
-  FirebaseMLVision: eba288c56228b25d9be498861ad0b9f305e8ce5c
-  FirebaseMLVisionFaceModel: 8656827cbf7c899a2da4567f8c42e31d243d3000
-  FirebaseMLVisionTextModel: abb5bc051ea1c286bfe04a0347ce25237d1df0aa
   Folly: de497beb10f102453a1afa9edbf8cf8a251890de
   glog: aefd1eb5dda2ab95ba0938556f34b98e2da3a60d
   Google-Maps-iOS-Utils: c32891ff472eaaa1fca032beedafa1a013af7875
-  GoogleAPIClientForREST: 4acfffd77f1c3c8741b6be9eaed0e603278efbde
   GoogleAppMeasurement: 98b71f5e04142793729a5ef23e5b96651ff4b70f
   GoogleMaps: c087b8e5dfe87ca6ebf59adb9b4894a4146bec4f
-  GoogleMobileVision: 31cfb4319fd0c03d80105680abd9eae9da5e3b47
-  GoogleToolboxForMac: 800648f8b3127618c1b59c7f97684427630c5ea3
   GoogleUtilities: 04fce34bcd5620c1ee76fb79172105c74a4df335
-  GTMSessionFetcher: 43b8b64263023d4f32caa0b40f4c8bfa3c5f36d8
   JWT: 9b5c05abbcc1a0e69c3c91e1655b3387fc7e581d
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
   Protobuf: a4dc852ad69c027ca2166ed287b856697814375b
@@ -449,6 +384,7 @@ SPEC CHECKSUMS:
   react-native-image-picker: e6e06d4315e3c85bad17e4b2002cd29f11d202c8
   react-native-maps: 0316ed017dbb64b33b227751fa810e2454fcfa39
   react-native-netinfo: 27d908bc7ee7b9f29400c02938a0b2a27a1015be
+  react-native-nfc-manager: c372508fed9c23f869caaee07ad419cb0a006d1a
   react-native-sqlite-storage: 3cfa904d9750f7e846c9a14c47951583ee99dbf4
   react-native-video: 25d5aebb3c9d7cdefe7a909306c7ab40be4a892c
   react-native-webview: 21c396687cb983fadc6ccc0751cc74f554131f3f
@@ -466,6 +402,6 @@ SPEC CHECKSUMS:
   TouchID: ba4c656d849cceabc2e4eef722dea5e55959ecf4
   yoga: 03ff42a6f223fb88deeaed60249020d80c3091ee
 
-PODFILE CHECKSUM: 7d6d23d9264926a094270de49d8bfb8835fcd6a8
+PODFILE CHECKSUM: 692975b4b6c52a16de854ffcb826508172882299
 
-COCOAPODS: 1.8.3
+COCOAPODS: 1.8.4
