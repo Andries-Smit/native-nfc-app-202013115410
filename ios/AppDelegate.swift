@@ -11,11 +11,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       fatalError("Missing the 'Runtime url' configuration within the Info.plist file")
     }
     // guard let bundleUrl = ReactNative.instance.getJSBundleFile() else {
-    guard let bundleUrl = AppUrl.forBundle(url: "http://10.201.200.160:8080", remoteDebuggingPackagerPort: 8083, isDebuggingRemotely: true, isDevModeEnabled: false) else {
+    guard let bundleUrl = AppUrl.forBundle(url: "http://10.201.200.121:8080", remoteDebuggingPackagerPort: 8083, isDebuggingRemotely: false, isDevModeEnabled: false) else {
       fatalError("Could not properly load JS bundle file")
     }
 
     ReactNative.instance.start(MendixApp(bundleUrl: bundleUrl, runtimeUrl: runTimeUrl, warningsFilter: WarningsFilter.none))
     return true
+  }
+  
+  public func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+    return RCTLinkingManager.application(app, open: url, options: options)
   }
 }

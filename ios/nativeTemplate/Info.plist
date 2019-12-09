@@ -24,6 +24,17 @@
 	<string>1</string>
 	<key>CodePushKey</key>
 	<string></string>
+<key>CFBundleURLTypes</key>
+<array>
+	<dict>
+		<key>CFBundleURLSchemes</key>
+		<array>
+			<string>app</string>
+		</array>
+		<key>CFBundleURLName</key>
+		<string>myapp</string>
+	</dict>
+</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
@@ -58,7 +69,7 @@
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>To use that feature the app needs access to your photo library.</string>
 	<key>Runtime url</key>
-	<string>http://10.201.200.160:8080</string>
+	<string>http://10.201.200.121:8080</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>glyphicons-halflings-regular.ttf</string>
